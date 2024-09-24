@@ -1,0 +1,73 @@
+/* styles.css */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f4f8; /* Soft background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h2 {
+    margin-bottom: 30px;
+    color: #333; /* Dark text color */
+    font-size: 28px; /* Larger font size */
+  }
+  
+  form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Wider form */
+  }
+
+  .error-message{
+    color: red;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Larger font size */
+    transition: border-color 0.3s;
+  }
+  
+  input:focus {
+    border-color: #007bff; /* Primary color on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light shadow on focus */
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Primary button color */
+    color: black;
+    border: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size */
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-1px); /* Slight lift effect */
+  }
+  
+  button:active {
+    transform: translateY(0); /* Reset lift on click */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 400px) {
+    form {
+      width: 90%; /* Full width on small screens */
+    }
+  }
+  
